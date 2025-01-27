@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+button {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    font-size: 70px;
+}
+
+.hover-element {
+    font-size: 70px;
+    opacity: 0.3;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    align-items: center;    
+    justify-content: center;
+}
+
+.score-count {
+    display: flex;
+    justify-content: center;
+    gap: 230px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+button:disabled {
+    font-weight: bolder;
+    color: black;
+}
+
+.intro {
+    position: relative;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 50px;
+}
+
+#winner {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 35px;
+;}
+
+.new-game-button,
+.restart-game-button {
+    border: 3px solid black;
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px black;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.player-one > :first-child {
+    font-size: 35px;
+    color: green;
+    font-weight: bolder;
+}
+
+.player-two > :first-child {
+    font-size: 35px;
+    color: red;
+    font-weight: bolder;
+}
+
+.player-one > :nth-child(2),
+.player-two > :nth-child(2) {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
